@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', Impact;
+}
+html, body{
+    height: 100%;
+}
+body{
+   background-color: black;
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+body::before{
+    content: "";
+    background-image: url("./bg.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+.error{
+    color: red;
+  }
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin: auto;
+    padding: 2.5rem;
+    z-index: 1;
+    background-color: white;
+  
+    
+
+    &__input {
+        outline: none;
+        padding: 0.5rem;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+    }
+
+    &__button {
+        border: 1px solid white;
+        border-radius: 70px;
+        margin-top: 20px;
+        padding: .2rem;
+        background-color: #FF6B00;
+        color: white;
+        height: 60px;
+        width: 255px;
+        
+    }
+}
+
+.BirthdateInput{
+    padding: 0.5rem;
+}
